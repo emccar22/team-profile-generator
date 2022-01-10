@@ -32,6 +32,9 @@ const addManager = () => {
                 if (isNaN(idInput)) {
                     console.log('Please enter the managers ID number!');
                     return false;
+                } else if (!idInput) {
+                    console.log('Please enter the managers ID number!');
+                    return false;
                 } else {
                     return true;
                 }
@@ -57,6 +60,9 @@ const addManager = () => {
             message: 'What is the managers office number?',
             validate: officeNumberInput => {
                 if (isNaN(officeNumberInput)) {
+                    console.log('Please enter the managers office number!');
+                    return false;
+                } else if (!officeNumberInput) {
                     console.log('Please enter the managers office number!');
                     return false;
                 } else {
@@ -107,7 +113,10 @@ const addEmployee = () => {
                 if (isNaN(idInput)) {
                     console.log("Please enter the employee's ID number!");
                     return false;
-                } else {
+                } else if (!idInput) {
+                    console.log("Please enter the employee's ID number!");
+                    return false;
+                }   else {
                     return true;
                 }
             }

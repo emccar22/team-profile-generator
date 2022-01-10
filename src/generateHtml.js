@@ -1,12 +1,12 @@
 const generateManagerCard = function (manager) {
     return `
-    <div class="col-4 mt-4">
-        <div class="card h-100">
-            <div class="card-header">
+    <div class="col-4 mt-4 p-4">
+        <div class="card h-100 shadow">
+            <div class="card-header p-3 bg-dark text-white">
                 <h3>${manager.name}</h3>
-                <h4>Manager</h4>
+                <h4><i class="fas fa-coffee"></i> Manager</h4>
             </div>
-            <div class="card-body">
+            <div class="card-body p-3 bg-light text-dark">
                 <p>ID: ${manager.id}</p>
                 <p>Email: <a href="mailto:${manager.email}">${manager.email}</a></p>
                 <p>Office Number: ${manager.officeNumber}</p>
@@ -18,13 +18,13 @@ const generateManagerCard = function (manager) {
 
 const generateEngineerCard = function (engineer) {
     return `
-    <div class="col-4 mt-4">
-        <div class="card h-100">
-            <div class="card-header">
+    <div class="col-4 mt-4 p-4">
+        <div class="card h-100 shadow">
+            <div class="card-header p-3 bg-dark text-white">
                 <h3>${engineer.name}</h3>
-                <h4>Engineer</h4>
+                <h4><i class="fas fa-glasses"></i> Engineer</h4>
             </div>
-            <div class="card-body">
+            <div class="card-body p-3 bg-light text-dark">
                 <p>ID: ${engineer.id}</p>
                 <p>Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
                 <p>GitHub: <a href="https://github.com/${engineer.github}">${engineer.github}</a></p>
@@ -36,13 +36,13 @@ const generateEngineerCard = function (engineer) {
 
 const geterateInternCard = function (intern) {
     return `
-    <div class="col-4 mt-4">
-        <div class="card h-100">
-            <div class="card-header">
+    <div class="col-4 mt-4 p-4">
+        <div class="card h-100 shadow">
+            <div class="card-header p-3 bg-dark text-white">
                 <h3>${intern.name}</h3>
-                <h4>Intern</h4>
+                <h4><i class="fas fa-graduation-cap"></i> Intern</h4>
             </div>
-            <div class="card-body">
+            <div class="card-body p-3 bg-light text-dark">
                 <p>ID: ${intern.id}</p>
                 <p>Email: <a href="mailto:${intern.email}">${intern.email}</a></p>
                 <p>School: ${intern.school}</p>
@@ -90,9 +90,10 @@ const generateTeamPage = function (employeeCards) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Team Profile</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/0e52284223.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header class="w-100 text-center">
+        <header class="w-100 text-center p-3 mb-2 bg-secondary text-white">
             <h1>Team Profile</h1>
         </header>
         <main>
